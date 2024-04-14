@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>Summer Camps</title>
+    <meta charset="utf-8" />
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	  <!-- link the webpage's stylesheet -->
+	  <link rel="stylesheet" href="/style.css" />
+
+	  <!-- link the webpage's JavaScript file -->
+	  <script src="/script.js" defer></script>
+
+    <!-- import fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+    <!-- importing scripts for logos -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+    <!-- link the webpage's stylesheet -->
+	  <link rel="stylesheet" href="/style.css" />
+
+	  <!-- link the webpage's JavaScript file -->
+	  <script src="/script.js" defer></script>
+
+    <!-- import icons -->
+    <script src="https://kit.fontawesome.com/9672af0ad6.js" crossorigin="anonymous"></script>
+    
+  </head>
+
+<body>
+  <div class = "page-container">
+    <div class = "content-wrap">
+      <nav class="nav">
+        <div class="logo">
+          <a href="index.html">
+            <img id= "navLogo" src= "assets/logo.png" />
+          </a>
+        </div>
+        <div class="toggle">
+          <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+        </div>
+        <ul class="menu">
+          <li id="summerCamps"><a href="summerCamps.html">Summer Camps</a></li>
+          <li id="tutoring"><a href="tutoring.html">Tutoring</a></li>
+          <li id="ourTeam"><a href="ourTeam.html">Our Team</a></li>
+          <li id="contact"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+        
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      
+      
+      
+        <script>
+      
+        $(function(){
+          $(".toggle").on("click", function(){
+            if($(".menu").hasClass("active")){
+              $(".menu").removeClass("active");
+              $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+            } else{
+              $(".menu").addClass("active");
+              $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+            }
+          });
+        });
+          
+        </script>
+      <!-- header -->
+      
+        <header id="summerCampHeader">
+        
+          <h1 class="titles">STEM IN THE SUMMER</h1>
+        
+        </header>
+      
+      <!-- main -->
+        <main>
+          <h1 class= "normalHeading">photo gallery</h1>
+        
+      <!--photogallery -->
+        <div class= "galleryContainer">
+          <div class= "carousel" >
+            <div class="slider" >
+              <section><img class = "carouselPics" src = "assets/carouselPic1.jpg"/></section>
+              <section><img class = "carouselPics" src = "assets/carouselPic2.jpg"/></section>
+              <section><img class = "carouselPics" src = "assets/carouselPic3.jpg"/></section>
+              <section><img class = "carouselPics" src = "assets/carouselPic4.jpg"/></section>
+              <section><img class = "carouselPics" src = "assets/carouselPic5.jpg"/></section>
+              <section><img class = "carouselPics" src = "assets/carouselPic6.jpg"/></section>
+              <section><img class = "carouselPics" src = "assets/carouselPic7.jpg"/></section>
+              <section><img class = "carouselPics" src = "assets/carouselPic8.jpg"/></section>
+              <section><img class = "carouselPics" src = "assets/carouselPic9.jpg"/></section>
+              <section><img class = "carouselPics" src = "assets/carouselPic10.jpg"/></section>
+              <section><img class = "carouselPics" src = "assets/carouselPic11.jpg"/></section>
+              <section><img class = "carouselPics" src = "assets/carouselPic12.jpg"/></section>
+              <section><img class = "carouselPics" src = "assets/carouselPic13.jpg"/></section>
+              <section><img class = "carouselPics" src = "assets/carouselPic14.jpg"/></section>
+              <section><img class = "carouselPics" src = "assets/carouselPic15.jpg"/></section>
+              <section><img class = "carouselPics" src = "assets/carouselPic16.jpg"/></section>
+            </div>
+            <div class= "galleryControls">
+              <span class="arrow prev"><i class="fa-solid fa-arrow-left fa-2xl"></i></span>
+              <span class="arrow next"><i class="fa-solid fa-arrow-right fa-2xl"></i></span>
+            </div>
+          </div>
+        </div>
+      <!--end of photo gallery -->
+            <h1 class= "normalHeading">2023 summer program</h1>
+          <div class="flexbox-container">
+            <div class="summerPrograms">
+              <h1 class="programSummer">STEM camp</h1>
+              <p class= "paragraphText">Toledo Minds hosts a week-long summer camp designed to develop STEM skills. The program meets from 9-1 Monday through Friday, and students engage in a range of fun STEM activities organized by high school students. Students are grouped by ability level, and receive small-group and one-on-one attention.
+ <br>
+            </div>
+           <!--   <div class="summerPrograms">
+                <h1 class="programSummer">more information</h1>
+                  <p class= "paragraphText"> <br>
+                        <a href="contact.html">
+                          <button class = "programSummerButton">contact us</button>
+                        </a>
+              </div> -->
+            <div class = "summerProgramsInfoMAIN">
+              <div class="summerProgramsInfo">
+                 <div class = "campicon"><i class="fa-solid fa-location-dot"></i></div>
+                  <p class = "campiconText"> 3000 Strayer Rd, Maumee, OH 43537 United States</p>
+             </div> 
+             <div class="summerProgramsInfo">
+                <div class = "campicon"><i class="fa-solid fa-calendar"></i></div>
+                <p class = "campiconText"> The date will be posted shortly</p>
+             </div>
+             <div class="summerProgramsInfo">
+                <div class = "campicon"><i class="fa-solid fa-child"></i></div>
+                <p class = "campiconText"> Available to students in the Toledo area entering grades 3-6</p>
+              </div> 
+             <div class="summerProgramsInfo">
+                <div class = "campicon"><i class="fa-solid fa-money-bill"></i></div>
+                <p class = "campiconText"> This camp is completely free!</p>
+              </div> 
+              
+            </p>
+            </div>
+          </div>
+          </div>
+         
+        </main>
+
+<!--footer-->
+  
+    <footer>
+      <div class = "footer-content">
+        <h1>Toledo Minds</h1>
+        <ul class = "socials">
+          <li><a href = "https://instagram.com/toledominds2022?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href = "mailto:toledominds@gmail.com"><i class="fa-regular fa-envelope"></i>
+          </a></li>
+        </ul>
+      </div>
+      <div class = "footer-bottom">
+        <p>website by <span>Irene Sun</span></p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

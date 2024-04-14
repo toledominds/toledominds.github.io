@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>Toledo Minds Home</title>
+    <meta charset="utf-8" />
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	  <!-- link the webpage's stylesheet -->
+	  <link rel="stylesheet" href="/style.css" />
+
+	  <!-- link the webpage's JavaScript file -->
+	  <script src="/script.js" defer></script>
+
+    <!-- import fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+    <!-- importing scripts for logos -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+    <!-- import icons -->
+    <script src="https://kit.fontawesome.com/9672af0ad6.js" crossorigin="anonymous"></script>
+  </head>
+
+<body>
+  <div class = "page-container">
+    <div class = "content-wrap">
+      <nav class="nav">
+        <div class="logo">
+          <a href="index.html">
+            <img id= "navLogo" src= "assets/logo.png" />
+          </a>
+        </div>
+        <div class="toggle">
+          <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+        </div>
+        <ul class="menu">
+          <li id="summerCamps"><a href="summerCamps.html">Summer Camps</a></li>
+          <li id="tutoring"><a href="tutoring.html">Tutoring</a></li>
+          <li id="ourTeam"><a href="ourTeam.html">Our Team</a></li>
+          <li id="contact"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+        
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      
+      
+      
+        <script>
+      
+        $(function(){
+          $(".toggle").on("click", function(){
+            if($(".menu").hasClass("active")){
+              $(".menu").removeClass("active");
+              $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+            } else{
+              $(".menu").addClass("active");
+              $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+            }
+          });
+        });
+          
+        </script>
+        
+      
+      <!-- ^^^^^ COLLAPSABLE NAV BAR ATTEMPT ^^^^^ -->
+        
+          <header id="homeHeader">
+      
+            <h1 id="hometitle">YOUTH TO YOUTH STEM ENRICHMENT</h1>
+      
+          </header>
+      
+      
+      <!-- video section -->
+        
+        
+      
+      <!-- sectioning videos with divs -->
+      
+      <main id = "homeaboutus">
+      <!-- about us section -->
+        <div class="flexbox-container">
+          <div class="flex-item-home">
+            <h1 id="aboutUsHome">about us</h1>
+          <p class="paragraphText">Toledo Minds was conceived during the COVID quarantine of 2020, when a group of high school students watched their younger siblings struggle with online learning. They subsequently created a free STEM camp open to all students grades 3-6. The camp teaches, reinforces, and augments fundamental math skills as well as scientific concepts and methods. The camp is highly interactive, emphasizing the fun of learning. Now entering its fourth year, Toledo Minds sets the highest standard for STEM education. 
+          </div>
+          <div class="container">
+            <img id = "homePagePhoto" src = "assets/groupWithLeaders.jpg"/>
+              <a href="ourTeam.html">
+                <button class = "btn">meet our team</button>
+              </a>
+          </div>
+        
+        </div> 
+      </main>
+      <!-- find a program section -->
+        <section class="programSection">
+          <h1 id= "findAProgram">find a program</h1>
+          <div class="flexbox-container">
+            <div class="programs">
+              <h1 class="programHome">tutoring</h1>
+            <p class= "paragraphText">Have a quick question about math? Our highly-skilled, high-school teachers are available for free drop-in tutoring from 7-8pm every day. <br>
+                  <a href="tutoring.html">
+                    <button class = "programButton">learn more</button>
+                  </a>
+            </div>
+              <div class="programs">
+                <h1 class="programHome">summer camps</h1>
+                  <p class= "paragraphText">We are excited to once again be hosting a free week-long summer camp for elementary students to develop STEM skills and a life-long love for learning. <br>
+                        <a href="summerCamps.html">
+                          <button class = "programButton">learn more</button>
+                        </a>
+              </div>
+              
+            </p>
+          
+          </div> 
+        
+        </section>
+
+        <!-- join our team -->
+      
+        <section id="joinUsHome">
+          <div id = joinUsSection>
+            <a href="">
+            <h1 class ="joinOurTeamText">JOIN OUR TEAM!</h1>
+              <!--<button class = "joinUsButton">apply now</button> -->
+            <a href="contact.html"
+              <button class = "joinUsButton">contact us to apply</button>
+            </a>
+          </div>
+        </section>  
+    </div>
+    <!-- footer -->
+    <footer>
+      <div class = "footer-content">
+        <h1>Toledo Minds</h1>
+        <ul class = "socials">
+          <li><a href = "https://instagram.com/toledominds2022?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href = "mailto:toledominds@gmail.com"><i class="fa-regular fa-envelope"></i>
+          </a></li>
+        </ul>
+      </div>
+      <div class = "footer-bottom">
+        <p>website by <span>Irene Sun</span></p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
