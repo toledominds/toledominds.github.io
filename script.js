@@ -11,45 +11,45 @@ window.addEventListener('scroll', () => {
   }
 });
 
+
 /* PHOTO GALLERY/CAROUSEL */
-  const slider = document.querySelector('.slider');
-  const carousel = document.querySelector('.carousel');
+const slider = document.querySelector('.slider');
+const carousel = document.querySelector('.carousel');
 
-  const prev = document.querySelector('.prev');
-  const next = document.querySelector('.next');
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
 
-  var direction;
+var direction;
 
-  prev.addEventListener('click', function() {
-    if (direction == -1) {
-      slider.appendChild(slider.firstElementChild);
-      direction = 1;
-    }
+prev.addEventListener('click', function() {
+  if (direction == -1) {
+    slider.appendChild(slider.firstElementChild);
     direction = 1;
-    slider.style.transform = 'translate(6.25%)';
-    carousel.style.justifyContent = 'flex-end';
+  }
+  direction = 1;
+  slider.style.transform = 'translate(6.25%)';
+  carousel.style.justifyContent = 'flex-end';
+});
+
+next.addEventListener('click', function() {
+  direction = -1;
+  carousel.style.justifyContent = 'flex-start';
+  slider.style.transform = 'translate(-6.25%)';
+});
+
+slider.addEventListener('transitionend', function() {
+  if (direction == -1) {
+    slider.appendChild(slider.firstElementChild);
+  } else if (direction == 1) {
+    slider.prepend(slider.lastElementChild);
+  }
+
+
+  slider.style.transition = 'none';
+  slider.style.transform = 'translate(0)';
+  setTimeout(function() {
+    slider.style.transition = 'all 0.5s';  
   });
 
-  next.addEventListener('click', function() {
-    direction = -1;
-    carousel.style.justifyContent = 'flex-start';
-    slider.style.transform = 'translate(-6.25%)';
-  });
-
-  slider.addEventListener('transitionend', function() {
-    if (direction == -1) {
-      slider.appendChild(slider.firstElementChild);
-    } else if (direction == 1) {
-      slider.prepend(slider.lastElementChild);
-    }
-    
-
-    slider.style.transition = 'none';
-    slider.style.transform = 'translate(0)';
-    setTimeout(function() {
-      slider.style.transition = 'all 0.5s';  
-    });
-
-  });
-
+});
 
