@@ -29,12 +29,51 @@ body {
   align-items: center;
   width: 60%;
   margin: 0 auto;
-  
+}
+
+.registerButton {
+  font-family: futura, Verdana, Trebuchet MS, gill sans, Helvetica, Arial;
+  font-size: 3vw;
+  padding: 0.5vw 1vw;
+  margin: 1vw;
+  text-align: center;
+  background-color:#fff9f0;
+  color: #4c8a89;
+  border: 3px solid black;
+  transition: background-color .3s linear;
+  justify-content: center;
+  align-items: center;
+}
+
+.registerButton:hover {
+  background-color:#bce1e1;
+  cursor:pointer;
+}
+
+.infoRegisterButton {
+  font-family: futura, Verdana, Trebuchet MS, gill sans, Helvetica, Arial;
+  font-size: 1.5vw;
+  padding: 0.5vw 1vw;
+  margin: 1vw;
+  text-align: center;
+  background-color:#fff9f0;
+  color: #4c8a89;
+  border: 3px solid black;
+  transition: background-color .3s linear;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoRegisterButton:hover {
+  background-color:#bce1e1;
+  cursor:pointer;
 }
 
 .campFlyerSection {
   background-color: #73b5b4;
   margin-top: 0px;
+  padding-bottom: 1vw;
+  text-align: center;
 }
 
 @media screen and (max-width:850px) {
@@ -1210,7 +1249,6 @@ nav{
   background-color: #f2bb45;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
     
-  }
 }
 
 /* #e6a800 */
@@ -1254,7 +1292,7 @@ nav a:hover{
 }
 
 .logo a:hover{
-  color: ##ffffff;
+  color: #ffffff;
 }
 
 .menu{
