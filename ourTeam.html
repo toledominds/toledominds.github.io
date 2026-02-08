@@ -2,44 +2,29 @@
 <html>
 
 <head>
-
   <title>Our Team</title>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- link the webpage's stylesheet -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- link the webpage's JavaScript file -->
   <script src="script.js" defer></script>
 
-  <!-- import fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 
-  <!-- importing scripts for logos -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-
-  <!-- import icons -->
   <script src="https://kit.fontawesome.com/9672af0ad6.js" crossorigin="anonymous"></script>
-
-  <!-- link the webpage's stylesheet -->
-  <link rel="stylesheet" href="/style.css" />
-
-  <!-- link the webpage's JavaScript file -->
-  <script src="/script.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
   <div class="page-container">
     <div class="content-wrap">
-      <!-- vvvvv COLLAPSABLE NAV BAR ATTEMPT vvvvv -->
+      
       <nav class="nav">
         <div class="logo">
           <a href="index.html">
@@ -57,14 +42,9 @@
         </ul>
       </nav>
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-
-
       <script>
-
-        $(function () {
-          $(".toggle").on("click", function () {
+        $(function() {
+          $(".toggle").on("click", function() {
             if ($(".menu").hasClass("active")) {
               $(".menu").removeClass("active");
               $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
@@ -74,180 +54,62 @@
             }
           });
         });
-
       </script>
 
-      <!-- header -->
       <header id="ourTeamHeader">
-
         <h1 class="titles">MEET OUR TEAM</h1>
-
       </header>
 
 
-      <!-- 3 action items side by side with div -->
       <main class="meetOurTeamSec">
 
-        
         <div class="flexboxContainer">
-          <div class="flexItem">
-            <div class="teamImageContainer">
-              <img class="headshots" src="assets2/akashjoshi.png" />
-
-              <div class="overlay">
-                <p class="bio">"My name is Akash Joshi and I go to Maumee Valley Country Day School. I am going into my
-                  junior year and love science. I enjoy reading and playing soccer. In my free time I like hanging out
-                  with my friends and family."</p>
-              </div>
-            </div>
-            <h2 class=photonames>Akash Joshi</h2>
-          </div>
-
-          
 
           <div class="flexItem">
             <div class="teamImageContainer">
-              <img class="headshots" src="assets2/ericawang.jpg" />
-    
+              <img class="headshots" src="assets2/henrysun.jpg" />
               <div class="overlay">
-                <p class="bio">"My name is Erica and I'm excited to participate in the Toledo Minds. My favorite subjects are biology and statistics, outside of school I like to paint and play volleyball. "</p>
+                <p class="bio">"My name is Henry Sun and I am currently a Junior at Ottawa Hills High School. I enjoy science and math classes at school and look forward to teaching. In my free time, I enjoy hanging out with friends and playing tennis."</p>
               </div>
             </div>
-            <h2 class=photonames>Erica Wang</h2>
+            <h2 class="photonames">Henry Sun</h2>
           </div>
 
           <div class="flexItem">
             <div class="teamImageContainer">
-              <img class="headshots" src="assets2/henryshao.jpg" />
-
+              <img class="headshots" src="assets2/adamzhang2.png" />
               <div class="overlay">
-                <p class="bio">"Henry is a senior at Southview High School. Henry is interested in computer science and
-                  wants to pursue a career in STEM. Currently, he plays piano and cello, and provides computer
-                  networking services for small businesses."</p>
+                <p class="bio">"My name is Adam Zhang and I am a sophomore at Southview High School. My favorite subjects are math and science. In my free time I enjoy playing tennis and pickleball."</p>
               </div>
             </div>
-            <h2 class=photonames>Henry Shao</h2>
+            <h2 class="photonames">Adam Zhang</h2>
           </div>
 
-
-
-        </div>
-    <!-- </div> -->
-
-    <div class="flexboxContainer">
-      <div class="flexItem">
-        <div class="teamImageContainer">
-          <img class="headshots" src="assets2/joanseo.jpeg" />
-
-          <div class="overlay">
-            <p class="bio">"Hi I’m Joan, and I’m a rising senior at Ottawa Hills! I like playing pickleball, listening
-              to music, and going on runs."</p>
+          <div class="flexItem">
+            <div class="teamImageContainer">
+              <img class="headshots" src="assets2/logantimmins.jpeg" />
+              <div class="overlay">
+                <p class="bio">"My name is Logan Timmins, I'm a junior at Southview high school. I am in science Olympiad and speech and debate. In my free time, I love to watch sports and play football with my friends."</p>
+              </div>
+            </div>
+            <h2 class="photonames">Logan Timmins</h2>
           </div>
+
+        </div> </main>
+
+      <footer>
+        <div class="footer-content">
+          <h1>Toledo Minds</h1>
+          <ul class="socials">
+            <li><a href="https://www.instagram.com/toledominds2025/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="mailto:info@toledominds.org"><i class="fa-regular fa-envelope"></i></a></li>
+          </ul>
         </div>
-        <h2 class=photonames>Joan Seo</h2>
-      </div>
-
-      <div class="flexItem">
-        <div class="teamImageContainer">
-          <img class="headshots" src="assets2/adamzhang.png" />
-
-          <div class="overlay">
-            <p class="bio">"My name is Adam Zhang and I am a sophomore at Southview High School. My favorite subjects are math and science. In my free time I enjoy playing tennis and pickleball."</p>
-          </div>
+        <div class="footer-bottom">
+          <p>website by <span>Irene Sun</span></p>
         </div>
-        <h2 class=photonames>Adam Zhang</h2>
-      </div>
-
-      <div class="flexItem">
-        <div class="teamImageContainer">
-          <img class="headshots" src="assets2/hanaheltahawy.jpg" />
-
-          <div class="overlay">
-            <p class="bio">"My name is Hanah Eltahawy, and I am a senior at Maumee Valley Country Day School"</p>
-          </div>
-        </div>
-        <h2 class=photonames>Hanah Eltahawy</h2>
-      </div>
-
+      </footer>
     </div>
-
-    <div class="flexboxContainer">
-      <div class="flexItem">
-        <div class="teamImageContainer">
-          <img class="headshots" src="assets2/irenesun.jpg" />
-
-          <div class="overlay">
-            <p class="bio">"Hi, my name is Irene Sun and I am a senior at Ottawa Hills High School. My favorite
-              classes at school are math and biology because I enjoy problem solving and learning about the world
-              around us. In my free time, I like to watch movies, hang out with my friends, paint, and play tennis."
-            </p>
-          </div>
-        </div>
-        <h2 class=photonames>Irene Sun</h2>
-      </div>
-
-      <div class="flexItem">
-        <div class="teamImageContainer">
-          <img class="headshots" src="assets2/joshuawang.jpg" />
-
-          <div class="overlay">
-            <p class="bio">"My name is Joshua Wang and I am a 12th grader at Maumee Valley. My favorite subjects in
-              school are math, science, and history, but in my free time I like to listen to music, read, and
-              workout."</p>
-          </div>
-        </div>
-        <h2 class=photonames>Joshua Wang</h2>
-      </div>
-
-      <div class="flexItem">
-        <div class="teamImageContainer">
-          <img class="headshots" src="assets2/estheryang.jpg" />
-
-          <div class="overlay">
-            <p class="bio">"Hi! My name is Esther and I'm a senior at Ottawa Hills High School. In school, I really
-              enjoy math, science, and history. Outside of school, I do speech and debate and I also enjoy horseback
-              riding and playing the violin. I'm very excited for this opportunity and I'm looking forward to
-              meeting all of you!"</p>
-          </div>
-        </div>
-        <h2 class=photonames>Esther Yang</h2>
-      </div>
-
-    </div>
-
-
-    <div class="flexboxContainer">
-      
-      <div class="flexItem">
-        <div class="teamImageContainer">
-          <img class="headshots" src="assets2/jiawencui.png" />
-
-          <div class="overlay">
-            <p class="bio">"Jiawen Cui is a junior at Maumee Valley Country Day School. Her favorite subjects are
-              physics and biology because of her fascination with the mysteries of the natural world. Outside of
-              school, Jiawen is a member of the school's dance club."</p>
-          </div>
-        </div>
-        <h2 class=photonames>Jiawen Cui</h2>
-      </div>
-
-    </div>
-    </main>
-    <!--footer-->
-    <footer>
-      <div class="footer-content">
-        <h1>Toledo Minds</h1>
-        <ul class="socials">
-          <li><a href="https://www.instagram.com/toledominds2025/"><i class="fa-brands fa-instagram"></i></a></li>
-          <li><a href="mailto:info@toledominds.org"><i class="fa-regular fa-envelope"></i>
-            </a></li>
-        </ul>
-      </div>
-      <div class="footer-bottom">
-        <p>website by <span>Irene Sun</span></p>
-      </div>
-    </footer>
   </div>
 </body>
-
 </html>

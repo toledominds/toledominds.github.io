@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-/* STYLE SECTIONING TAGS */
-* { /* Reset the space of the webpage */
+* { 
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  
 }
 
 body {
@@ -13,17 +11,13 @@ body {
   box-sizing: border-box;
 }
 
-
 #homeaboutus {
   padding-top: 2vw;
-  /*margin-left: 10%; 
-  margin-right: 10%; */
   margin: auto;
   margin-right: 10%;
 } 
 
 #homePageFlyer {
-  /* margin: auto; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,18 +87,13 @@ main {
   main {
     margin-left: 10%;
     margin-right: 10%;
-    
   }
 }
 
-/* STYLE TEXT */
-
-/* general h1 styling */
 h1 {
   color:#fff9f0;
   font-family: futura, Verdana, Trebuchet MS, gill sans, Helvetica, Arial;
   font-weight: bolder;
-  
 }
 
 h2 {
@@ -125,10 +114,8 @@ h3 {
   font-weight: bolder;
 }
 
-/* big titles on top of each page */
 .titles{
   font-size: 6vw;
-  /*font-size:calc(15px + 6vw); */
   font-size:calc(28px + 6vw);
   text-align: left; 
   margin-right: 5%;
@@ -140,7 +127,6 @@ h3 {
   margin-right: 5%;
   min-width: 100px;
 }
-/* paragraph styling. feel free to change size, color, and font! */
 
 .paragraphTexts{
   font-family: futura, Verdana, Trebuchet MS, gill sans, Helvetica, Arial;
@@ -157,8 +143,6 @@ h3 {
   line-height: 42px;
 }
 
-/* adding space if the paragraph 
-   is at the top of the page */
 #paragraphTextsTop1{
   margin-top: 30px;
 }
@@ -167,9 +151,6 @@ h3 {
   margin-top: 30px;
 }
 
-/* STYLE IMAGES */
-
-/* styling the background images on top */
 #homeHeader {
   display: block;
   background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("assets/explosionExperiment.jpg");
@@ -236,8 +217,6 @@ h3 {
   }
 }
 
-/* home page flexboxes (wrap if small screen) */
-
 .flexbox-container {
   margin: auto;
   display: flex;
@@ -267,12 +246,6 @@ h3 {
     width: auto;
 }
 }
-
-
-
-
-/* home page flexbox items */
-
 
 .normalHeading {
   text-align: center;
@@ -313,7 +286,6 @@ h3 {
   justify-content: center;
   margin: auto;
 }
-
 
 #findAProgram {
   text-align: center;
@@ -362,14 +334,6 @@ h3 {
   }
 }
 
-
-
-#joinOurTeam {
-  
-}
-
-/* Container needed to position the button. Adjust the width as needed */
-
 .container {
   position: relative;
   width: 100%;
@@ -378,15 +342,11 @@ h3 {
   padding-top: calc(10px + 1vw);
 }
 
-/* Make the image responsive */
 .container img {
   width: 100%;
   height: auto;
   align-img: center;
 }
-
-/* Style the button and place it in the middle of the container/image */
-
 
 .container .btn {
   position: absolute;
@@ -399,7 +359,6 @@ h3 {
   font-size:calc(10px + 1vw);
   font-weight: bolder;
   padding: 5px 10px;
-  /*border: 0.3vw solid #cac2ba; */
   cursor: pointer;
   display: block;
   transition: background-color .3s linear;
@@ -457,7 +416,6 @@ h3 {
   text-align: center;
 }
 
-
 .joinOurTeamText {
   color: #fff9f0;
   font-family: futura, Verdana, Trebuchet MS, gill sans, Helvetica, Arial;
@@ -501,7 +459,6 @@ h3 {
 
 }
 
-
 .page-container{
   position: relative;
   min-height: 100vh;
@@ -538,11 +495,9 @@ footer{
   text-transform: capitalize;
   letter-spacing: 0.1vw;
   margin-top: 5px;
-  /*text-shadow: -3px -3px 6px #f2bb45, 3px 3px 6px #73b5b4; */
 }
 
 .footer-content p{
-  /*max-width: 500px; */
   margin: 15px auto;
   line-height: 28px;
   font-size: 20px;
@@ -634,7 +589,6 @@ footer{
   }
   
   .footer-content p{
-  /*max-width: 500px; */
   margin: 10px auto;
   line-height: 28px;
   font-size: 14px;
@@ -654,10 +608,6 @@ footer{
 }
 }
 
-
-/* SUMMER CAMP PAGE */
-
-/* photo gallery */
 .galleryContainer {
   width: 60%;
   margin: 20px auto;
@@ -686,7 +636,7 @@ footer{
 .slider {
   display: flex;
   height: 100%;
-  width: 3200%; /* becase there are 32 photos, each 100% */
+  width: 3200%; 
   flex-shrink: 0;
   transition: all 0.5s;
 }
@@ -721,9 +671,6 @@ footer{
   width: 100%;
 }
 
-
-/*endphotogallery*/
-
 .summerPrograms {
   text-align: center;
   padding-left: 3vw;
@@ -744,7 +691,6 @@ footer{
   font-family: futura, Verdana, Trebuchet MS, gill sans, Helvetica, Arial;
   font-weight: bold;
   color: #4d7575;
-  /* text-shadow: -0.2vw 0.2vw 0 #f2bb45; */
   text-align: center;
   justify-content: center;
 }
@@ -791,12 +737,6 @@ footer{
 
 }
 .campicon{
-  /*text-align: left;
-  height: 60px;
-  min-width: 60px;
-  display: inline-block;
-  align-items: flex-start;
-  */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -808,11 +748,6 @@ footer{
   
 }
 .campiconText{
-  /*display: inline-block;
-  margin-left: 20px;
-  color: white;
-  flex-direction: column;
-  font-size: calc(10px + 1vw); */
   display:flex;
   font-size:calc(12px + 0.5vw);
   flex-direction: column;
@@ -839,9 +774,6 @@ footer{
   }
 
 }
-
-/* tutoring page */
-
 
 #tutoringBackground {
   background-color: #fff9f0;
@@ -876,54 +808,41 @@ footer{
   font-weight: normal;
 }
 
-
-
-/* OUR TEAM PAGE */
-
-/* our team header image */
-
-
-/* CONTACT PAGE */
-
-/* our team page */
-
 .meetOurTeamSec {
   padding-top: 1vw;
   justify-content: center;
-  align: center;
   text-align: center;
 }
 
 .flexboxContainer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
   margin: auto;
-  justify-content: center;
-  align-items: center;
+  padding-bottom: 5vw;
+  margin-top: 1vw;
+  width: 90%;
+  max-width: 1200px;
 }
 
-
 .flexItem {
-  flex-basis: 100%;
-  text-align: center;
-  justify-content: center;
-  margin: auto;
-  margin-bottom: 5vw;
-  margin-top: 1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .teamImageContainer {
   position: relative;
-  display:block;
-  justify-content: center;
-  align-items: center;
-  align: center;
+  display: block;
+  width: 300px;
+  height: 300px;
   margin: auto;
+  overflow: hidden;
 }
 
-  .overlay {
+.overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -931,93 +850,51 @@ footer{
   right: 0;
   opacity: 0;
   transition: .5s ease;
-  background-color: #000000;
-  align: center;
-  width: 320px;
-  align-items:center;
+  background-color: rgba(0,0,0,0.8);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  margin: auto;
-  }
+}
 
 .teamImageContainer:hover .overlay {
-  opacity: 0.9;
+  opacity: 1;
 }
 
 .photonames {
   color: black;
   text-align: center;
-  margin: 10px;
+  margin-top: 15px;
+  font-size: 1.5rem;
 }
 
 .bio {
   font-size: 14px;
   color: white;
   text-align: center;
-  margin: 20px 20px;
-  position: absolute;
+  padding: 20px;
   line-height: 25px;
-  align-items:center;
-  justify-content: center;
-  justify-text: center;
 }
 
-  .headshots{
-    display:block;
-    justify-content: center;
-    align-items: center;
-    align: center;
-    width: 320px;
-    margin: auto;
-  }
+.headshots {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 @media screen and (max-width:1000px) {
   .flexboxContainer { 
-    flex-basis: 100%; 
-    flex-wrap: wrap;
-    display:block;
-    align-items: center;
-    justify-items: center;
-    flex-flow: column;
-    
-  }
-  .flexItem {
-    margin: auto;
-  
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
   .teamImageContainer {
-    position: relative;
-    width: 320px;
+    width: 280px;
+    height: 280px;
   }
-
-  .headshots{
-    display:block;
-    justify-content: center;
-    align-items: center;
-    align: center;
-    width: 100%;
-  }
-  
-  .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #000000;
-  align: center;
-  width: 320px;
-  align-items:center;
-  justify-content: center;
-  }
-
-  .teamImageContainer:hover {
-  opacity: 0.9;
-}
 }
 
-/* contact page */
 .fa-regular fa-location-dot {
   color: black;
 }
@@ -1065,7 +942,6 @@ footer{
 
 .contactContainer .contactInfo{
   width: 40%;
-  /*padding-right: 120px; */
   display: flex;
   flex-direction: column;
 }
@@ -1218,7 +1094,6 @@ footer{
   }
 
 }
-/* vvvvv ATTEMPTING COLLAPSABLE NAV BAR vvvvv */
 
 a, a:hover{
   text-decoration: none;
@@ -1250,8 +1125,6 @@ nav{
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
     
 }
-
-/* #e6a800 */
 
 nav ul{
   padding-top: 25px;
@@ -1317,7 +1190,6 @@ nav a:hover{
   }
 
 
-/* smaller website */
 @media screen and (max-width: 800px){
 
   nav{
@@ -1376,9 +1248,4 @@ nav a:hover{
   nav a:hover{
     color: #d19410;
   }
-  /* #navLogo {
-  width: 10vw;
-  } */
 }
-
-/* ^^^^^ ATTEMPTING COLLAPSABLE NAV BAR ^^^^^ /* 
